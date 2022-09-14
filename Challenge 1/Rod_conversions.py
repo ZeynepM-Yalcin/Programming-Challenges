@@ -1,3 +1,4 @@
+
 def rod_to_meters(rods):
     meters = rods * 5.0292
     return meters
@@ -28,12 +29,18 @@ def calculate():
 
     return rods,meters, feet, miles, furlongs, minutes
 
+def print_values():
+    print(f" meters: {meters}")
+    print(f" feet: {feet}")
+    print(f" miles: {miles}")
+    print(f" furlongs: {furlongs}")
+    print(f" Minutes to walk {rods}: {minutes}")
+
 
 rods,meters, feet, miles, furlongs, minutes = calculate()
-print(f" meters: {meters}")
-print(f" feet: {feet}")
-print(f" miles: {miles}")
-print(f" furlongs: {furlongs}")
-print(f" Minutes to walk {rods}: {minutes}")
+
+
+if __name__ == '__main__':
+    print_values()
 
 
